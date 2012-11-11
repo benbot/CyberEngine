@@ -3,7 +3,7 @@
 	<FileVersion major="1" minor="6" />
 	<Project>
 		<Option title="CyberEngine" />
-		<Option pch_mode="2" />
+		<Option pch_mode="0" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
@@ -32,8 +32,10 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add option="-Winvalid-pch" />
+			<Add option='-include &quot;precomp.h&quot;' />
 			<Add directory="/home/dartosgamer/Documents/Irrlicht/include" />
-			<Add directory="./Include" />
+			<Add directory="./include" />
 		</Compiler>
 		<Linker>
 			<Add library="GL" />
@@ -44,6 +46,7 @@
 			<Add directory="/home/dartosgamer/Documents/Irrlicht/lib/" />
 			<Add directory="./lib" />
 		</Linker>
+		<Unit filename="EventReciever" />
 		<Unit filename="Game.h" />
 		<Unit filename="StateSystem/GameState.h" />
 		<Unit filename="StateSystem/GameStateMgr.cpp" />
@@ -51,6 +54,10 @@
 		<Unit filename="StateSystem/InGameState.h" />
 		<Unit filename="TestBed/TestBed.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="precomp.h">
+			<Option compile="1" />
+			<Option weight="0" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<debugger />

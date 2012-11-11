@@ -1988,8 +1988,10 @@
 
 1352514508 /home/dartosgamer/Documents/Projects/Cyber/StateSystem/GameState.h
 
-1352598416 source:/home/dartosgamer/Documents/Projects/Cyber/precomp.h
+1352598883 source:/home/dartosgamer/Documents/Projects/Cyber/precomp.h
 	"irrlicht.h"
+	"SFML/Audio.hpp"
+	"SFML/Network.hpp"
 
 1352146454 /home/dartosgamer/Documents/Projects/Cyber/include/irrlicht.h
 	"IrrCompileConfig.h"
@@ -2977,4 +2979,242 @@
 	"aabbox3d.h"
 	"matrix4.h"
 	"IVideoDriver.h"
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Audio.hpp
+	<SFML/System.hpp>
+	<SFML/Audio/Listener.hpp>
+	<SFML/Audio/Music.hpp>
+	<SFML/Audio/Sound.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundBufferRecorder.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<SFML/Audio/SoundStream.hpp>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Err.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.hpp>
+	<SFML/System/Utf.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Config.hpp
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/Clock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/Export.hpp
+	<SFML/Config.hpp>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/Time.hpp
+	<SFML/System/Export.hpp>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/Err.hpp
+	<SFML/System/Export.hpp>
+	<ostream>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/InputStream.hpp
+	<SFML/Config.hpp>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/Lock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/NonCopyable.hpp
+	<SFML/System/Export.hpp>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/Mutex.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/Sleep.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/String.hpp
+	<SFML/System/Export.hpp>
+	<locale>
+	<string>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/Thread.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Thread.inl>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/Thread.inl
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/ThreadLocal.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/ThreadLocalPtr.hpp
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.inl>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/ThreadLocalPtr.inl
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/Utf.hpp
+	<SFML/Config.hpp>
+	<algorithm>
+	<locale>
+	<string>
+	<cstdlib>
+	<SFML/System/Utf.inl>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/Utf.inl
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/Vector2.hpp
+	<SFML/System/Vector2.inl>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/Vector2.inl
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/Vector3.hpp
+	<SFML/System/Vector3.inl>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/System/Vector3.inl
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Audio/Listener.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/System/Vector3.hpp>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Audio/Export.hpp
+	<SFML/Config.hpp>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Audio/Music.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundStream.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Audio/SoundStream.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<cstdlib>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Audio/SoundSource.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/System/Vector3.hpp>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Audio/Sound.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Time.hpp>
+	<cstdlib>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Audio/SoundBuffer.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<set>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Audio/SoundBufferRecorder.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<vector>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Audio/SoundRecorder.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/System/Thread.hpp>
+	<vector>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Network.hpp
+	<SFML/System.hpp>
+	<SFML/Network/Ftp.hpp>
+	<SFML/Network/Http.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/Packet.hpp>
+	<SFML/Network/SocketSelector.hpp>
+	<SFML/Network/TcpListener.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/Network/UdpSocket.hpp>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Network/Ftp.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Network/Export.hpp
+	<SFML/Config.hpp>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Network/TcpSocket.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/System/Time.hpp>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Network/Socket.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/SocketHandle.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<vector>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Network/SocketHandle.hpp
+	<SFML/Config.hpp>
+	<basetsd.h>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Network/Http.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<map>
+	<string>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Network/IpAddress.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/System/Time.hpp>
+	<istream>
+	<ostream>
+	<string>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Network/Packet.hpp
+	<SFML/Network/Export.hpp>
+	<string>
+	<vector>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Network/SocketSelector.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/System/Time.hpp>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Network/TcpListener.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+
+1334414791 /home/dartosgamer/Documents/Projects/Cyber/include/SFML/Network/UdpSocket.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<vector>
+
+1352660922 source:/home/dartosgamer/Documents/Projects/Cyber/Game.cpp
+	"Game.h"
+
+1352660934 /home/dartosgamer/Documents/Projects/Cyber/Game.h
+	"EventReciever.h"
+	"StateSystem/GameState.h"
+	"StateSystem/GameStateMgr.h"
+	"StateSystem/InGameState.h"
+
+1352660896 /home/dartosgamer/Documents/Projects/Cyber/EventReciever.h
+
+1352660821 /home/dartosgamer/Documents/Projects/Cyber/StateSystem/InGameState.h
 

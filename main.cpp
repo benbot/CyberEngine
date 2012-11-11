@@ -1,26 +1,31 @@
+#include "Game.h"
+
 using namespace irr;
 
 int main()
 {
-    IrrlichtDevice* device = createDevice(video::EDT_SOFTWARE, core::dimension2d<u32>(600,600));
+
+    IrrlichtDevice* device = createDevice(video::EDT_OPENGL, core::dimension2d<u32>(600,600));
 
     scene::ISceneManager* mgr = device->getSceneManager();
     video::IVideoDriver*driver = device->getVideoDriver();
 
-    scene::ISceneNode* node = mgr->addCubeSceneNode();
+    device->getFileSystem()->addFileArchive("///home/dartosgamer/Downloads/map-losttemple.pk3");
 
-    //node->setPosition(core::vector3df(0, 0, 10));
-    node->setMaterialFlag(video::EMF_LIGHTING, false);
-    //mgr->addCameraSceneNode(0, core::vector3df(0, 30, -40), core::vector3df(0, 0, 0));
+    scene::IAnimatedMesh* mesh = mgr->getMesh("losttemple.bsp");
+    scene::ISceneNode* node = 0;
 
+    node = mgr->addMeshSceneNode(mesh->getMesh(0), 0, 0);
+    mgr->addCameraSceneNodeFPS();
 
-    scene::ICameraSceneNode* node2 = mgr->addCameraSceneNodeFPS();
-    node2->setPosition(core::vector3df(0, 0, -40));
 
     while(device->run())
     {
         driver->beginScene(true, true, video::SColor(255, 0, 0, 0));
         mgr->drawAll();
+    //    std::cout << device->getTimer()->getTime()/1000 << std::endl;
         driver->endScene();
     }
+
+    return 0;
 }
