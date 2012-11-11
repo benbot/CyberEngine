@@ -12,7 +12,7 @@ namespace game
         ~GameStateMgr();
 
         void addState(GameState* state);
-        GameState* popState(GameState* state);
+        GameState* popState();
         GameState* changeState(GameState* state);
         GameState* getCurrentState();
 

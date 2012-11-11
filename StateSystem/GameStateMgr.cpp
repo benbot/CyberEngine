@@ -12,7 +12,9 @@ namespace game
 
     GameState* GameStateMgr::popState()
     {
+        GameState* temp = states.top();
         states.pop();
+        return temp;
     }
 
     GameState* GameStateMgr::changeState(GameState* state)
