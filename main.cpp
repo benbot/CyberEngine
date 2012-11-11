@@ -1,5 +1,3 @@
-#include "irrlicht.h"
-
 using namespace irr;
 
 int main()
@@ -16,7 +14,7 @@ int main()
     //mgr->addCameraSceneNode(0, core::vector3df(0, 30, -40), core::vector3df(0, 0, 0));
 
 
-    scene::ICameraSceneNode* node2 = mgr->addCameraSceneNodeFPS(0, 0, .3);
+    scene::ICameraSceneNode* node2 = mgr->addCameraSceneNodeFPS();
     node2->setPosition(core::vector3df(0, 0, -40));
 
     while(device->run())
