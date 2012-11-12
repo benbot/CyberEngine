@@ -5,7 +5,7 @@ namespace game
     GameStateMgr::GameStateMgr() {}
     GameStateMgr::~GameStateMgr() {}
 
-    void GameStateMgr::addState(GameState* state)
+    void GameStateMgr::pushState(GameState* state)
     {
         states.push(state);
     }

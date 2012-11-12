@@ -46,7 +46,8 @@
 			<Add directory="/home/dartosgamer/Documents/Irrlicht/lib/" />
 			<Add directory="./lib" />
 		</Linker>
-		<Unit filename="EventReciever" />
+		<Unit filename="EventReciever.h" />
+		<Unit filename="Game.cpp" />
 		<Unit filename="Game.h" />
 		<Unit filename="StateSystem/GameState.h" />
 		<Unit filename="StateSystem/GameStateMgr.cpp" />
