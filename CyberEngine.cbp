@@ -53,7 +53,6 @@
 		<Unit filename="StateSystem/GameStateMgr.cpp" />
 		<Unit filename="StateSystem/GameStateMgr.h" />
 		<Unit filename="StateSystem/InGameState.h" />
-		<Unit filename="TestBed/TestBed.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="precomp.h">
 			<Option compile="1" />

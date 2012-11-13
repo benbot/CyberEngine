@@ -3,7 +3,15 @@
 
 namespace game
 {
-    class InGameState;
+    class InGameState : public GameState
+    {
+    public:
+        InGameState();
+        ~InGameState();
+
+        virtual states update();
+        virtual void draw();
+    };
 }
 
 #endif // GAMESTATE_H_INCLUDED
