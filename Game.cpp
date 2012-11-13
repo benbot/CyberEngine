@@ -14,7 +14,7 @@ namespace game
 
         if(device)
         {
-            stateManager.pushState(NULL //TODO get a working state set up for the )
+            stateManager.pushState(NULL); //TODO get a working state set up for the )
             return 0;
         }
 

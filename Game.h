@@ -24,10 +24,10 @@ namespace game
 
     private:
         GameStateMgr stateManager;
-        EventReciever eventReciever;
-        IrrlichtDevice* device = 0;
-        scene::ISceneManager* sceneMgr = 0;
-        video::IVideoDriver* driver = 0;
+        //EventReciever eventReciever;
+        IrrlichtDevice* device;
+        scene::ISceneManager* sceneMgr;
+        video::IVideoDriver* driver ;
     };
 };
 
