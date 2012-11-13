@@ -7,14 +7,20 @@
 
 namespace game
 {
+    enum states
+    {
+        S_INGAME,
+        S_MENU,
+        S_QUIT
+    };
+
     class GameState
     {
     public:
         GameState();
         ~GameState();
-        virtual int update() = 0;
+        virtual states update() = 0;
         virtual void draw() = 0;
-
     };
 };
 

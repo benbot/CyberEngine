@@ -8,12 +8,6 @@
 namespace game
 {
     using namespace irr;
-    enum states
-    {
-        S_INGAME,
-        S_MENU,
-        S_QUIT
-    };
 
     class Game
     {

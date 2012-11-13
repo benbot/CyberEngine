@@ -14,6 +14,7 @@ namespace game
 
         if(device)
         {
+            stateManager.pushState(NULL //TODO get a working state set up for the )
             return 0;
         }
 
@@ -22,7 +23,10 @@ namespace game
 
     void Game::run()
     {
+        while (device->isWindowActive())
+        {
 
+        }
     }
 
     void Game::close()
