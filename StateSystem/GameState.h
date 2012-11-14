@@ -9,6 +9,7 @@ namespace game
 {
     enum states
     {
+        S_CONTINUE,
         S_INGAME,
         S_MENU,
         S_QUIT
@@ -19,8 +20,12 @@ namespace game
     public:
         GameState();
         ~GameState();
+        virtual int init() = 0;
         virtual states update() = 0;
-        virtual void draw() = 0;
+
+    protected:
+        virtual void draw();
+        lua_State* luaState;
     };
 };
 

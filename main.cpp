@@ -27,20 +27,17 @@ int main()
         core::dimension2d<f32>(0,0),
         core::dimension2d<f32>(10,10));
 
-    node = mgr->addWaterSurfaceSceneNode(mesh->getMesh(0), 50.0f, 300.0f, 30.0f);
+    node = mgr->addWaterSurfaceSceneNode(mesh->getMesh(0), 20.0f, 300.0f, 30.0f);
     node->setPosition(core::vector3df(0,7,0));
 
     node->setMaterialType(video::EMT_REFLECTION_2_LAYER);
-    node->setMaterialTexture(1, driver->getTexture("fun.jpg"));
     //node->setMaterialFlag(video::EMF_LIGHTING, false);
 
-    node = mgr->addLightSceneNode(0, core::vector3df(0, 100, 0), video::SColorf(20, 200, 0), 100);
+    node = mgr->addLightSceneNode(0, core::vector3df(0, 100, 0), video::SColorf(0, 0, 255), 100);
     scene::ISceneNodeAnimator* anim;
     anim = mgr->createFlyCircleAnimator(node->getPosition(), 1000);
-    node->addAnimator(anim);
+    //node->addAnimator(anim);
     anim->drop();
-
-    node = mgr->addLightSceneNode((0, core::vector3df(0, 100, 0), video::SColorf(0, 0, 100), 100));
 
     mgr->addCameraSceneNodeFPS();
 

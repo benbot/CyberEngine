@@ -23,9 +23,9 @@ namespace game
 
     void Game::run()
     {
-        while (device->isWindowActive())
+        while (device->run())
         {
-
+            stateManager.getCurrentState()->update();
         }
     }
 

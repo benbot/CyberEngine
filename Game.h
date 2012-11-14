@@ -1,5 +1,6 @@
 #ifndef GAME_H_INCLUDED
 #define GAME_H_INCLUDED
+
 #include "EventReciever.h"
 #include "StateSystem/GameState.h"
 #include "StateSystem/GameStateMgr.h"

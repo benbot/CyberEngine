@@ -8,5 +8,13 @@
 #include "irrlicht.h"
 #include "SFML/Audio.hpp"
 #include "SFML/Network.hpp"
+#include "namespace.h"
+
+extern "C"
+{
+    #include "luaJIT/lua.h"
+    #include "luaJIT/lualib.h"
+    #include "luaJIT/lauxlib.h"
+}
 
 #endif // PRECOMP_H_INCLUDED
