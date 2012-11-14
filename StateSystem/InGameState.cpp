@@ -12,6 +12,8 @@ namespace game
     int InGameState::addLight(lua_State* L)
     {
         game::smgr->addLightSceneNode(0, core::vector3df(0, 100, 0), video::SColorf(0, 0, 255), 100);
+
+        return 0;
     }
 
     int InGameState::init()

@@ -13,7 +13,7 @@ namespace game
 
         virtual int init();
         virtual states update();
-        int addLight(lua_State* L);
+        static int addLight(lua_State* L);
 
     };
 }
