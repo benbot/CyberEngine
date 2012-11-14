@@ -43,18 +43,22 @@
 			<Add library="lib/libIrrlicht.a" />
 			<Add directory="./lib" />
 		</Linker>
+		<Unit filename="EventReciever.cpp" />
 		<Unit filename="EventReciever.h" />
 		<Unit filename="Game.cpp" />
 		<Unit filename="Game.h" />
+		<Unit filename="StateSystem/GameState.cpp" />
 		<Unit filename="StateSystem/GameState.h" />
 		<Unit filename="StateSystem/GameStateMgr.cpp" />
 		<Unit filename="StateSystem/GameStateMgr.h" />
+		<Unit filename="StateSystem/InGameState.cpp" />
 		<Unit filename="StateSystem/InGameState.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="namespace.cpp" />
+		<Unit filename="namespace.h" />
 		<Unit filename="precomp.h">
 			<Option compile="1" />
 			<Option weight="0" />
-			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Extensions>
 			<code_completion />
