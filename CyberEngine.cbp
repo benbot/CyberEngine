@@ -33,8 +33,6 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-Winvalid-pch" />
-			<Add option='-include &quot;precomp.h&quot;' />
-			<Add directory="/home/dartosgamer/Documents/Irrlicht/include" />
 			<Add directory="./include" />
 		</Compiler>
 		<Linker>
@@ -43,7 +41,6 @@
 			<Add library="Xxf86vm" />
 			<Add library="../../../../../lib64/libX11.so" />
 			<Add library="lib/libIrrlicht.a" />
-			<Add directory="/home/dartosgamer/Documents/Irrlicht/lib/" />
 			<Add directory="./lib" />
 		</Linker>
 		<Unit filename="EventReciever.h" />
@@ -57,6 +54,7 @@
 		<Unit filename="precomp.h">
 			<Option compile="1" />
 			<Option weight="0" />
+			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Extensions>
 			<code_completion />
