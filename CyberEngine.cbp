@@ -33,6 +33,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-Winvalid-pch" />
+			<Add option="-Wswitch" />
 			<Add option='-include &quot;precomp.h&quot;' />
 			<Add directory="./include" />
 		</Compiler>

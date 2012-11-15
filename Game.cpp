@@ -8,13 +8,12 @@ namespace game
 
     int Game::init(int x = 800, int y = 600)
     {
-        device = createDevice(video::EDT_OPENGL, core::dimension2d<u32>(x, y), 16, false, false, false, 0);
+        device = createDevice(video::EDT_OPENGL, core::dimension2d<u32>(x, y), 16, false, false, false, &eventReciever);
         driver = device->getVideoDriver();
         sceneManager = device->getSceneManager();
-
         if(device)
         {
-            stateManager.pushState(new InGameState()); //TODO get a working state set up for the )
+            stateManager.pushState(new InGameState());
             return 0;
         }
 

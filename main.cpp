@@ -6,7 +6,7 @@ int main()
     {
         game::Game game;
 
-        game.init(500, 500);
+        game.init(800, 600);
         game.run();
     }
     catch (const char* e)

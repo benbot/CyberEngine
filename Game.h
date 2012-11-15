@@ -22,7 +22,7 @@ namespace game
 
     private:
         GameStateMgr stateManager;
-        //EventReciever eventReciever;
+        EventReciever eventReciever;
     };
 };
 
