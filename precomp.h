@@ -1,6 +1,10 @@
 #ifndef PRECOMP_H_INCLUDED
 #define PRECOMP_H_INCLUDED
 
+//this is for debug only
+#include <iostream>
+//end debug stuff
+
 #if  (!defined (WX_PRECOMP))
     #define WX_PRECOMP
 #endif

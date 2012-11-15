@@ -6,7 +6,7 @@ namespace game
     using namespace irr;
 
     extern IrrlichtDevice* device;
-    extern scene::ISceneManager* smgr;
+    extern scene::ISceneManager* sceneManager;
     extern video::IVideoDriver* driver;
 }
 

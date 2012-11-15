@@ -19,16 +19,10 @@ namespace game
         int init(int x, int y);
         void run();
         void close();
-        IrrlichtDevice* getDevice();
-        video::IVideoDriver* getDriver();
-        scene::ISceneManager* getSceneManager();
 
     private:
         GameStateMgr stateManager;
         //EventReciever eventReciever;
-        IrrlichtDevice* device;
-        scene::ISceneManager* sceneMgr;
-        video::IVideoDriver* driver ;
     };
 };
 

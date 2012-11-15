@@ -8,13 +8,13 @@ namespace game
 
     int Game::init(int x = 800, int y = 600)
     {
-        device = createDevice(video::EDT_OPENGL, core::dimension2d<u32>(x, y), 32, false, false, false, 0);
+        device = createDevice(video::EDT_OPENGL, core::dimension2d<u32>(x, y), 16, false, false, false, 0);
         driver = device->getVideoDriver();
-        sceneMgr = device->getSceneManager();
+        sceneManager = device->getSceneManager();
 
         if(device)
         {
-            stateManager.pushState(NULL); //TODO get a working state set up for the )
+            stateManager.pushState(new InGameState()); //TODO get a working state set up for the )
             return 0;
         }
 
@@ -25,27 +25,20 @@ namespace game
     {
         while (device->run())
         {
-            stateManager.getCurrentState()->update();
+            switch(stateManager.getCurrentState()->update())
+            {
+            case game::S_CONTINUE:
+                continue;
+                break;
+            default:
+                throw "Error switch";
+                break;
+            }
         }
     }
 
     void Game::close()
     {
         device->closeDevice();
-    }
-
-    IrrlichtDevice* Game::getDevice()
-    {
-        return device;
-    }
-
-    video::IVideoDriver* Game::getDriver()
-    {
-        return driver;
-    }
-
-    scene::ISceneManager* Game::getSceneManager()
-    {
-        return sceneMgr;
     }
 }

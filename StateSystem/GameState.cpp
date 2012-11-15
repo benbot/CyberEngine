@@ -4,18 +4,26 @@ namespace game
 {
     GameState::GameState()
     {
-        //luaState = luaL_newstate();
+        luaState = luaL_newstate();
+
+        luaL_openlibs(luaState);
+
+        if(!luaState)
+        {
+            throw "LuaState loading error";
+        }
+
     }
 
     GameState::~GameState()
     {
-        //lua_close(luaState);
+        lua_close(luaState);
     }
 
-    void GameState::draw()
+    void GameState::draw(bool x, bool y, const video::SColor& color)
     {
-        driver->beginScene(true, true, video::SColor(255, 0, 0, 0));
-        smgr->drawAll();
+        driver->beginScene(x, y, color);
+            sceneManager->drawAll();
         driver->endScene();
     }
 }

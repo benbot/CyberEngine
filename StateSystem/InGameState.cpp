@@ -3,36 +3,22 @@
 namespace game
 {
     InGameState::InGameState() {}
-
-    InGameState::~InGameState()
-    {
-        lua_close(luaState);
-    }
+    InGameState::~InGameState() {}
 
     int InGameState::addLight(lua_State* L)
     {
-        game::smgr->addLightSceneNode(0, core::vector3df(0, 100, 0), video::SColorf(0, 0, 255), 100);
+        game::sceneManager->addLightSceneNode(0, core::vector3df(0, 100, 0), video::SColorf(0, 0, 255), 100);
 
         return 0;
     }
 
-    int InGameState::init()
-    {
-        luaState = luaL_newstate();
-
-        if(luaState)
-        {
-            lua_register(luaState, "addLight", addLight);
-
-            return 0;
-        }
-
-        return -1;
-    }
-
     states InGameState::update ()
     {
-        draw();
+        sceneManager->addCameraSceneNodeFPS();
+        scene::ISceneNode* node = sceneManager->addCubeSceneNode();
+        node->setMaterialFlag(video::EMF_LIGHTING, false);
+
+        draw(true, true, video::SColor(255, 0, 0, 0));
         return S_CONTINUE;
     }
 }

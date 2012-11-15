@@ -8,13 +8,12 @@ namespace game
     class InGameState : public GameState
     {
     public:
+
         InGameState();
         ~InGameState();
 
-        virtual int init();
         virtual states update();
         static int addLight(lua_State* L);
-
     };
 }
 

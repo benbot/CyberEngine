@@ -20,11 +20,10 @@ namespace game
     public:
         GameState();
         ~GameState();
-        virtual int init() = 0;
         virtual states update() = 0;
 
     protected:
-        virtual void draw();
+        void draw(bool x, bool y, const video::SColor& color);
         lua_State* luaState;
     };
 };
