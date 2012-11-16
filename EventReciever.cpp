@@ -5,5 +5,16 @@ namespace game
 {
     using namespace irr;
 
-    //help
+   bool EventReciever::OnEvent(const SEvent& event)
+    {
+        if(event.EventType == EET_KEY_INPUT_EVENT)
+        {
+            switch(event.KeyInput.Key)
+            {
+            case KEY_ESCAPE:
+                device->closeDevice();
+                break;
+            }
+        }
+    }
 }
