@@ -13,8 +13,11 @@ namespace game
             {
             case KEY_ESCAPE:
                 device->closeDevice();
+                return true;
                 break;
             }
         }
+
+        return false;
     }
 }
