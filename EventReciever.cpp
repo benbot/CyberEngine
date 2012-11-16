@@ -3,5 +3,7 @@
 
 namespace game
 {
+    using namespace irr;
 
-};
+    //help
+}
