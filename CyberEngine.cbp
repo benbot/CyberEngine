@@ -51,6 +51,7 @@
 		<Unit filename="EventReciever.h" />
 		<Unit filename="Game.cpp" />
 		<Unit filename="Game.h" />
+		<Unit filename="GameComponents/GameComponent.h" />
 		<Unit filename="StateSystem/GameState.cpp" />
 		<Unit filename="StateSystem/GameState.h" />
 		<Unit filename="StateSystem/GameStateMgr.cpp" />
