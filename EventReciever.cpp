@@ -5,7 +5,30 @@ namespace game
 {
     using namespace irr;
 
-   bool EventReciever::OnEvent(const SEvent& event)
+    EventReciever::EventReciever()
+    {
+        update = NULL;
+    }
+
+    EventReciever::~EventReciever() {}
+
+    bool EventReciever::OnEvent(const SEvent& event)
+    {
+        int ret = 0;
+        if(update != NULL)
+        {
+            ret = update(event);
+            if(ret != 0)
+            {
+                return ret;
+            }
+        }
+
+        return globEventHandeler(event);
+
+    }
+
+    bool EventReciever::globEventHandeler(const SEvent& event)
     {
         if(event.EventType == EET_KEY_INPUT_EVENT)
         {
@@ -20,4 +43,10 @@ namespace game
 
         return false;
     }
+
+    void EventReciever::setUpdate(bool (*update) (const SEvent& event))
+    {
+        this->update = update;
+    }
+
 }

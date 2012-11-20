@@ -17,6 +17,9 @@ namespace game
         virtual states update();
         static int addLight(lua_State* L);
     private:
+
+        bool eventHandeler(const SEvent& event);
+
         std::map<scene::IAnimatedMesh*, const std::string> meshes;
         std::map<scene::ISceneNode*, const std::string> nodes;
     };

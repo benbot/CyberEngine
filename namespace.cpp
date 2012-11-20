@@ -7,4 +7,5 @@ namespace game
     IrrlichtDevice* device;
     scene::ISceneManager* sceneManager;
     video::IVideoDriver* driver;
+    EventReciever eventReciever;
 }

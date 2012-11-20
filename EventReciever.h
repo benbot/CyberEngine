@@ -4,11 +4,20 @@ namespace game
 {
     using namespace irr;
 
+    class EventFunctor;
+
     class EventReciever : public IEventReceiver
     {
     public:
+        EventReciever();
+        ~EventReciever();
 
         bool OnEvent(const SEvent& event);
+        bool globEventHandeler(const SEvent& event);
+        void setUpdate(bool (*update) (const SEvent& event));
+
+    private:
+        bool (*update) (const SEvent& event);
     };
 }
 
