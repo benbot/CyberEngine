@@ -1,5 +1,7 @@
 #include "GameStateMgr.h"
 
+#define topState states.top()
+
 namespace game
 {
     GameStateMgr::GameStateMgr() {}
@@ -12,14 +14,14 @@ namespace game
 
     GameState* GameStateMgr::popState()
     {
-        GameState* temp = states.top();
+        GameState* temp = topState;
         states.pop();
         return temp;
     }
 
     GameState* GameStateMgr::changeState(GameState* state)
     {
-        GameState* temp = states.top();
+        GameState* temp = topState;
         states.pop();
         states.push(state);
         return temp;

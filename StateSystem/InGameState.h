@@ -14,11 +14,13 @@ namespace game
         InGameState();
         ~InGameState();
 
-        virtual states update();
-        static int addLight(lua_State* L);
+        states update();
+
+        void loadUpdater();
+
     private:
 
-        bool eventHandeler(const SEvent& event);
+        static bool eventHandeler(const SEvent& event);
 
         std::map<scene::IAnimatedMesh*, const std::string> meshes;
         std::map<scene::ISceneNode*, const std::string> nodes;

@@ -23,6 +23,7 @@ namespace game
         GameState();
         ~GameState();
         virtual states update() = 0;
+        virtual void loadUpdater() = 0;
 
     protected:
         void draw(bool x, bool y, const video::SColor& color);
