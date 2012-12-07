@@ -10,7 +10,7 @@ namespace game
         scene::ITriangleSelector* trisel = sceneManager->createOctreeTriangleSelector(node->getMesh(), node, 128);
         node->setTriangleSelector(trisel);
         scene::ICameraSceneNode* cam = sceneManager->addCameraSceneNodeFPS(0, 100, .3f, 0);
-        scene::ISceneNodeAnimator* anim = sceneManager->createCollisionResponseAnimator(trisel, cam, core::vector3df(30, 50, 30), core::vector3df(0, 0, 0), core::vector3df(0, 30, 0));
+        scene::ISceneNodeAnimator* anim = sceneManager->createCollisionResponseAnimator(trisel, cam, core::vector3df(30, 50, 30), core::vector3df(0, 0, 0), core::vector3df(0, 15, 0));
         cam->addAnimator(anim);
         loadUpdater();
     }
