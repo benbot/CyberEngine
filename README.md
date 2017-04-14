@@ -1,4 +1,4 @@
-This readme will, one day, have usefull stuff in it. For now it is here 
+~This readme will, one day, have useful stuff in it~. For now it is here 
 to tell you that this project will be used by me in Global Game Jam 2013
 
 Since I am writting this on a linux computer all of the resource files 
